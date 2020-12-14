@@ -21,7 +21,6 @@ public class Configs {
     public static final String PART_OF_SPEECH = "part_of_speech";
     public static final String TYPE = "type";
     public static final String ENTIME = "entime";
-    public static final String URL_SQL = "com.mysql.jdbc.Driver";
     public static final String querySelectEnWhereVerbandNoun = "SELECT en FROM `tablet` WHERE part_of_speech = \"Verb+Noun\" LIMIT 1";
     public static final String querySelectRuWhereVerbandNoun = "SELECT ru FROM `tablet` WHERE part_of_speech = \"Verb+Noun\" LIMIT 1";
 

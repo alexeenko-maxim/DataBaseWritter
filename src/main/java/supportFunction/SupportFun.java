@@ -14,6 +14,8 @@ public class SupportFun {
         }
 
     public static String deteteVerbFromString(String stringOriginal) {
+        System.out.println("Метод deteteVerbFromString() Получил на вход значение: " + stringOriginal);
+        System.out.println();
 
         List<String> list = new ArrayList<>(Arrays.asList(stringOriginal.split(" ")));
         list.removeIf(itVar -> itVar.endsWith("ать,")
@@ -65,7 +67,8 @@ public class SupportFun {
                 || itVar.endsWith("утся,")
                 || itVar.endsWith("отся,"));
         String stringEdited = String.join(" ", list);
-        System.out.println(stringEdited);
+        System.out.println("Метод deteteVerbFromString() отдал на выход значение: " + stringEdited);
+        System.out.println();
         return stringEdited;
     }
 

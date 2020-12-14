@@ -20,7 +20,7 @@ public class ControllerGUI extends Configs implements ActionListener {
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
 
-        Class.forName(URL_SQL);
+        Class.forName(DB_Driver);
 
         dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
 
